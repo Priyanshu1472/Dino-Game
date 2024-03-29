@@ -1,6 +1,6 @@
 @font-face {
     font-family: Minecraft;
-    src: url('Minecraft.ttf');
+    src: url('/dino/Minecraft.ttf');
 }
 
 .game-container {
@@ -10,7 +10,7 @@
     border: 1px solid;
     position: relative;
     overflow: hidden;
-    background-image: url('sky.png');
+    background-image: url('/dino/sky.png');
     background-size: contain;
     animation: bg-move 30s linear infinite;
 }
@@ -31,14 +31,14 @@
     position: absolute;
     bottom: 0;
     left: 20%;
-    background-image: url('dino.gif');
+    background-image: url('/dino/dino.gif');
     background-size: cover;
     background-position: bottom;
 }
 
 .player.jump {
     animation: jump 1.5s infinite;
-    background-image: url('dino.png');
+    background-image: url('/dino/dino.png');
 }
 
 @keyframes jump {
@@ -66,7 +66,7 @@
     left: 80%;
     /* border: 1px solid red; */
     animation: move 3s linear infinite;
-    background-image: url('obstacle.png');
+    background-image: url('/dino/obstacle.png');
     background-size: contain;
 }
 
@@ -124,7 +124,7 @@
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-image: url('restart.png');
+    background-image: url('/dino/restart.png');
     background-size: contain;
     margin-left: 15px;
     cursor: pointer;
@@ -139,5 +139,5 @@
 }
 
 .stop .player {
-    background-image: url('dino.png');
+    background-image: url('/dino/dino.png');
 }
